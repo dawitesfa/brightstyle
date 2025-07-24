@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+body,
+nav,
+header,
+ul {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(235, 235, 232);
+  font-size: 1.6rem;
+  padding: 1.6rem 6rem 0 6rem;
+  font-family: "lato", cursive;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #bd412d;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  text-decoration: none;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+}
+.logo:hover {
+  font-size: 1.7rem;
+}
+.navList {
+  display: flex;
+  list-style: none;
+  column-gap: 1.6rem;
+}
+
+.nav_item {
+  transition: ease-in-out 1s;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.nav_item:hover::after {
+  width: 100%;
+}
+
+.nav_item::after {
+  display: block;
+  background-color: #bd412d;
+  margin: auto;
+  height: 2px;
+  width: 0%;
+  content: "";
+  transition: ease-in-out 0.3s;
+}
+
+.active {
+  color: #bd412d;
+}
+
+.main_title {
+  font-size: 4.2rem;
+}
+
+.decorate {
+  color: #bd412d;
+}
+.section {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+img {
+  height: 65vh;
+}
+
+.spacer {
+  width: 15rem;
+}
+
+.desc {
+  font-size: 1rem;
+  line-height: 1.3;
+  width: 20rem;
+  padding-left: 1.6rem;
+}
+
+.other {
+  width: 30rem;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  padding-top: 2rem;
+}
+.about_sec {
+  display: block;
+}
+
+.form {
+  width: 50%;
+  background-color: azure;
+  border-radius: 1rem;
+  padding: 1.6rem;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+}
