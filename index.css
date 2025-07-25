@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-div,
-body,
-nav,
-header,
-ul {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -19,16 +8,27 @@ ul {
 body {
   background-color: rgb(235, 235, 232);
   font-size: 1.6rem;
-  padding: 1.6rem 6rem 0 6rem;
   font-family: "lato", cursive;
 }
 .header {
   display: flex;
   justify-content: space-between;
+  width: 75%;
+  margin: auto;
+  padding: 1.6rem 0;
 }
 
 .logo {
   color: #bd412d;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  text-decoration: none;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+}
+.logo_footer{
+  color: white;
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 900;
@@ -78,6 +78,8 @@ body {
 }
 .section {
   height: 95vh;
+  width: 75%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -106,6 +108,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 1rem;
+  column-gap: 1.6rem;
   padding-top: 2rem;
 }
 .about_sec {
@@ -122,4 +125,81 @@ img {
 input {
   border: none;
   background-color: transparent;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  background-color: #bd412d;
+  color: white;
+  width: 100%;
+}
+.social_links{
+  display: flex;
+  column-gap: 1.6rem;
+  list-style: none;
+}
+.footer_text{
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: "Lato", cursive;
+  text-align: center;
+}
+
+.social_links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+
+}
+
+.social_link{
+  border: 1px solid #ffffff5b;
+  border-radius: 1.6rem;
+  padding: 2px 1.6rem;
+  font-size: 1.2rem;
+}
+
+.detail_footer{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: "Lato", cursive;
+  text-align: center;
+  column-gap: 1rem;
+}
+
+.leadership_item {
+  display: flex;
+  justify-content: start;
+  align-content: start;
+  column-gap: 1rem;
+}
+
+/* .img_container{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  
+} */
+
+.img{
+   height: 5rem;
+  width: 5rem;
+  overflow: hidden;
+}
+
+
+.leader_img
+{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.leadership_item p{
+  font-size: 1rem;
 }
