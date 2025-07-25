@@ -27,7 +27,7 @@ body {
   text-decoration: none;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
 }
-.logo_footer{
+.logo_footer {
   color: white;
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
@@ -73,6 +73,14 @@ body {
   font-size: 4.2rem;
 }
 
+.title {
+  margin-bottom: 1.6rem;
+}
+
+.title_other {
+  margin-bottom: 0;
+}
+
 .decorate {
   color: #bd412d;
 }
@@ -107,7 +115,7 @@ img {
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 1rem;
+  row-gap: 3rem;
   column-gap: 1.6rem;
   padding-top: 2rem;
 }
@@ -126,21 +134,21 @@ input {
   border: none;
   background-color: transparent;
 }
-.footer{
+.footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 15vh;
   background-color: #bd412d;
   color: white;
   width: 100%;
+  padding: 1.6rem 0;
 }
-.social_links{
+.social_links {
   display: flex;
   column-gap: 1.6rem;
   list-style: none;
 }
-.footer_text{
+.footer_text {
   font-size: 1rem;
   font-weight: 300;
   font-family: "Lato", cursive;
@@ -151,17 +159,16 @@ input {
   color: white;
   text-decoration: none;
   font-size: 0.8rem;
-
 }
 
-.social_link{
+.social_link {
   border: 1px solid #ffffff5b;
   border-radius: 1.6rem;
   padding: 2px 1.6rem;
   font-size: 1.2rem;
 }
 
-.detail_footer{
+.detail_footer {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -186,20 +193,18 @@ input {
   
 } */
 
-.img{
-   height: 5rem;
+.img {
+  height: 5rem;
   width: 5rem;
   overflow: hidden;
 }
 
-
-.leader_img
-{
+.leader_img {
   height: 100%;
   width: 100%;
   border-radius: 50%;
 }
 
-.leadership_item p{
+.leadership_item p {
   font-size: 1rem;
 }
